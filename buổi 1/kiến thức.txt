@@ -1,0 +1,15 @@
+- codelearn
+- khung chương trình
+- cin, cout
+- biến và kiểu dữ liệu
+	+ số nguyên: int, long long,..
+	+ số thực: float, double, ...
+	+ kí tự: char
+	+ xâu kí tự: string
+	+ bool
+- các phép toán
+	+ gán
+	+ cộng, trừ, nhân, chia(/), chia dư(%)
+	+ so sánh(==, !=, ...)
+- comment(//, /* */)
+ 
