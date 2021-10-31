@@ -114,7 +114,4 @@ Chúng ta có thể khai báo cùng 1 lúc nhiều biến nếu chúng có cùng
 - Toán tử so sánh: >, <, <=, >=, ==, != 
 - Toán tử tăng giảm : ++i, --i, i++, i--, 
 
-i-=a` `  <-> i = i-a 
-
-i+=a
-i*=b
+	i-=a` `  <-> i = i-a 
