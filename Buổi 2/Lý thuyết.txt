@@ -1,0 +1,31 @@
+- Thư viện <math.h>
++ abs(n) : trị tuyệt đối của n
++ sqrt(n) : căn bậc 2 của n
++ pow(a ,b) : a ^ b
+- Câu lệnh if:
+if(điều kiện) {
+	Nếu điều kiện đúng, thực hiện lệnh ở đây
+}
+
+- Câu lệnh if, else:
+if(điều kiện) {
+	Nếu điều kiện đúng, thực hiện lệnh ở đây
+}
+else {
+	Nếu điều kiện sai, thực hiện lệnh ở đây
+}
+
+* Lưu ý:+ Điều kiện có thế hoặc là 1 hoặc nhiều điều kiện; nếu nhiều điều kiện thì sử dụng toán tử &&(và), ||(hoặc)
+	VD: đk 0 < x < n sẽ viết trên code: (0 < x && x < n)
+	+ Khi so sánh sử dụng các toán tử: >, <, >=, <=, !=(khác), ==(bằng); =(là phép gán, không sử dụng để so sánh)
+- Câu lệnh switch, case:
+switch(n) {
+	case x1:
+	case x2:
+	...
+	default:
+}
+x1, x2 là các hằng số ứng với kiểu giá trị của n(kiểu của n là int thì x1, x2 là các số nguyên)
+câu lệnh sẽ so sánh giá trị của n với từng case từ trên xuống, nếu giá trị n bằng giá trị tại case nào sẽ thực hiện lệnh bắt đầu từ case đó cho tới khi gặp break hoặc kết thúc câu lệnh switch
+giá trị tại các case là khác nhau
+lệnh default (có thể có hoặc không) chỉ được thực hiện khi không có case nào có giá trị bằng n

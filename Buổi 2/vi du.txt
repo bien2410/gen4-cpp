@@ -1,0 +1,42 @@
+// nhap vao n, in ra xem ngay do la thu may(biet ngay dau tien la thu 2);
+#include<iostream>
+using namespace std;
+int main() {
+	int n;
+	cin >> n;
+	if(n <= 0 || n > 31) return 0; //lenh nay dung de ket thuc chuong trinh neu n ko thoa man
+	else {
+		n = n % 7;
+		switch(n) {
+			case 1: {
+				cout << "thu hai";
+				break;
+			}
+			case 2: {
+				cout << "thu ba";
+				break;
+			}
+			case 3: {
+				cout << "thu tu";
+				break;
+			}
+			case 4: {
+				cout << "thu nam";
+				break;
+			}
+			case 5: {
+				cout << "thu sau";
+				break;
+			}
+			case 6: {
+				cout << "thu bay";
+				break;
+			}
+			default: {
+				cout << "chu nhat";
+				break;
+			}
+		}
+	}
+	return 0;
+}
