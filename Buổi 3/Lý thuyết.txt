@@ -1,0 +1,42 @@
+- i++ và ++i:
++ Giống nhau : đều tăng i lên 1 đơn vị(i += 1)
++ Khác nhau: 
+* i++ sẽ làm việc với giá trị hiện tại của i sau đó mới tăng lên 1 đơn vị
+* ++i sẽ làm việc với giá trị của i + 1(tăng i lên 1 đơn vị sau đó mới làm việc)
+VD: i = 2;	cout << i++; (sẽ in ra 2)
+i = 2;	cout << ++i; (sẽ in ra 3)
+Tương tự với i-- và --i
+- Vòng lặp
++ Vòng for(phần 1; phần 2; phần 3) {
+	Khối lệnh;
+}
+Phần 1: Biểu thức khởi đầu
+Phần 2: Biểu thức điều kiện
+Phần 3: Bước nhảy
+Lưu ý : Cả 3 phần đều là tùy chọn, có thể vắng mặt nhưng vẫn phải có dấu chấm phẩy
+VD: 2 VD sau là tương đương
+VD1: 
+for(int i = 1; i <= n; i++){
+	cout << i << " "; 
+}
+VD2;
+int i = 1;
+for (; ;) {
+	cout << i << " ";
+	if(i == n) break;
+	i++; 
+} 
+Lưu ý: Khi gặp lệnh break thì sẽ dừng vòng lặp
+       Khi gặp lệnh continue vòng lặp sẽ thực hiện bước nhảy tiếp theo mà không thực hiện những dòng lệnh trong vòng lặp ở dưới continue
++ Vòng while
+while(đk){
+	Khối lệnh
+}
+Nếu điều kiện đúng sẽ thực hiện khối lệnh
++ Vòng do - while
+do{
+	Khối lệnh
+}
+while(đk);
+Luôn thực hiện khối lệnh 1 lần sau đó xét đến đk, đúng thì lặp lại khối lệnh
+Lưu ý: Luôn có bước nhảy(tăng i hoặc giảm i) để tránh vòng lặp vô hạn
