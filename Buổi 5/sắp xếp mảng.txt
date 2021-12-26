@@ -1,0 +1,51 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int a[10000], n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> a[i];
+	}
+	//chon truc tiep
+	int min;
+	for(int i = 0; i < n - 1; i++) {
+		min = i;
+		for(int j = i + 1; j < n; j++) {
+			if(a[j] < a[min]) min = j;
+		}
+		swap(a[i], a[min]);
+	}
+	// noi bot 
+	for(int i = 0; i < n; i++){
+		for(int j = 0; j < n-1-i; j++){
+			if(a[j] > a[j + 1]){
+			swap(a[j],a[j+1]);
+			}
+		}
+	}
+	// doi cho  
+	 for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+	        if(a[i] > a[j]) {
+		        swap(a[i], a[j]);
+		    }
+		}
+	}
+	// chen
+	int pos, x;
+	for(int i = 1; i < n; i++){
+		x = a[i]; 
+		pos = i;
+		while(pos > 0 && x < a[pos-1]){
+			a[pos] = a[pos-1];	
+			pos--;
+		}
+		a[pos] = x;
+	}
+	//sort
+	sort(a, a + n);
+	for (int i = 0; i < n; i++) {
+		cout << a[i] << " ";
+	}
+	return 0;
+}
