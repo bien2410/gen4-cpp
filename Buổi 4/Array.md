@@ -1,12 +1,13 @@
-## Mảng 1 chiều
+# Mảng 1 chiều
+---
 
-#### 1. Khái niệm và cách sử dụng mảng 1 chiều
-#### 2. Khai báo, duyệt các phần tử mảng
-#### 3. Kỹ thuật mảng đánh dấu
-#### 4. Kỹ thuật sắp xếp mảng
-#### 5. Các bài toán tìm kiếm trong mảng đã sắp xếp trình tự
-### Buổi 4
-**1.**
+1. [Khái niệm và cách sử dụng mảng 1 chiều](#1)
+2. [Khai báo, duyệt các phần tử mảng](#2)
+3. [Kỹ thuật mảng đánh dấu](#3) 
+4. [Kỹ thuật sắp xếp mảng](#4)
+5. [Các bài toán tìm kiếm trong mảng đã sắp xếp trình tự](#5)
+---
+### 1. Khái niệm và cách sử dụng mảng 1 chiều <a name="1"></a>
 
 - Mảng là một loại cấu trúc dữ liệu trong ngôn ngữ lập trình C/C++, nó lưu trữ một tập hợp tuần tự các phần tử cùng kiểu với độ dài cố định. Mảng thường được sử dụng để lưu trữ tập hợp dữ liệu, nhưng nó cũng hữu dụng khi dùng để lưu trữ một tập hợp biến có cùng kiểu.
 
@@ -14,7 +15,7 @@
 
 - Tất cả mảng đều bao gồm các vị trí nhớ liền kề nhau. Địa chỉ thấp nhất tương ứng với phần tử đầu tiên và địa chỉ cao nhất tương ứng với thành phần cuối cùng của mảng.
 
-**2.**
+### 2. Khai báo và duyệt phần tử mảng <a name="2"></a>
 
 **a. Khai báo mảng**
 
@@ -26,7 +27,7 @@ Khai báo đảm bảo khởi tạo được số phần tử cố định của
 Quy định về đặt tên mảng tương tự như quy định về đặt tên 1 biến. 
 
 Ví dụ một vài cách khai báo mảng:
-```
+```C++
     int a[1000]; // Khai báo mảng a gồm 1000 phần tử, tất cả các phần tử đều có kiểu dữ liệu int.
 
     char c[200]; // Khai báo mảng c gồm 200 phần tử có kiểu dữ liệu kí tự.
@@ -39,7 +40,7 @@ Ví dụ một vài cách khai báo mảng:
 ```
 
 Có thể xác định só lượng phần tử của mảng bằng giá trị của 1 biến xác định.
-``` 
+```C++
     int n = 10;
     int a[n]; // tương đương với việc khai báo  int a[10];
 ```
@@ -52,17 +53,15 @@ Khi khai báo `int a[1000];` các giá trị của các phần tử trong mảng
 - Chỉ số cho biết thứ tự phần tử trong mảng, bắt đầu từ 0 với phần tử đầu tiên. Ví dụ với mảng gồm n phần tử, chỉ số các phần tử trong mảng sẽ bắt đầu từ 0 đến n - 1 là chỉ số của phần tử cuối cùng. 
 
 - In mảng: 
-```php
+```C++
     int a[5] = {1, 2, 3, 4, 5};
     for (int i = 0; i < 5; ++i) cout << a[i] << " ";
 ```
 - Nhập mảng từ bàn phím:
-```php
+```C++
     int a[5];
     for (int i = 0; i < 5; ++i) cin >> a[i];
 ```
-
-**3.**
 
 
  
