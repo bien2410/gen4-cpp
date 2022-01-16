@@ -1,4 +1,5 @@
-##Kiến thức buổi 1 
+#Kiến thức buổi 1 
+
 ```php
 > Cấu trúc cơ bản của chương trình C++  
 > Lệnh, khối lệnh, từ khóa, comment.
