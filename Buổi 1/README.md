@@ -1,14 +1,16 @@
-##Kiến thức buổi 1 
-```php
-> Cấu trúc cơ bản của chương trình C++  
-> Lệnh, khối lệnh, từ khóa, comment.
-> Lệnh liên quan đến xuất dữ liệu
-> Biến và các kiểu dữ liệu trong C++
-> Các toán tử và phép toán cơ bản 
-```
+# Kiến thức buổi 1 
+--- 
+### Mục lục:
+1. [Cấu trúc cơ bản của chương trình C++](#1) 
 
-####1. Chương trình C++ ban đầu
-```php
+2. [Lệnh, khối lệnh, từ khóa, comment.](#2)
+
+3. [Lệnh liên quan đến xuất dữ liệu](#3)
+4. [Biến và các kiểu dữ liệu trong C++](#4)
+5. [Các toán tử và phép toán cơ bản](#5)
+---
+#### 1. Chương trình C++ ban đầu <a name="1"></a>
+```C++
 #include<iostream> // thư viện tích hợp
 
 using namespace std; // không gian tích hợp
@@ -24,7 +26,7 @@ int main() {
 	+ Kiểu trả về của hàm main (int).
 	+ Tên của hàm main (cũng là main luôn).
 	+ Thân của hàm main (cặp dấu ngoặc nhọn { và }).
-	+ Giá trị trả về của hàm main (return 0; //hoặc giá trị bao nhiêu cũng đc).
+	+ Giá trị trả về của hàm main (return 0; // hoặc giá trị bao nhiêu cũng đc).
 
 
 + Những dòng lệnh bên trong thân hàm main. (Có thể có hoặc không)
@@ -34,7 +36,7 @@ int main() {
 + Tích hợp thư viện và không gian tên. (Phụ thuộc vào các lệnh mà bạn sử dụng).
 
 
-####2. Lệnh, khối lệnh, từ khóa, comment
+#### 2. Lệnh, khối lệnh, từ khóa, comment <a name="2"></a>
 
 a. Lệnh
 Lệnh là một chỉ thị riêng biệt của một chương trình.
@@ -66,7 +68,7 @@ d. Comment
     */
 ```
 
-####3.Lệnh liên quan đến nhập xuất dữ liệu
+#### 3.Lệnh liên quan đến nhập xuất dữ liệu <a name="3"></a>
 - In ra màn hình sử dụng câu lệnh `cout <<` 
 Cái được in ra màn hình có thể là : một số, chuỗi kĩ tự ...
 - Để in nhiều đối tượng cùng một lúc ngoài việc sử dụng Chuỗi các lệnh `cout <<`  nhiều lần chúng ta có thể dùng `<<` để nối các đoạn cần in ra.
@@ -78,7 +80,7 @@ cú pháp `cin >> <tên biến>;`
 có thể nhập dạng số nguyên , kí tự tùy vào kiểu dữ liệu của biến.
 
 
-####4. Biến và các kiểu dữ liệu
+#### 4. Biến và các kiểu dữ liệu <a name="4"></a>
 - Biến:  Biến là một ô nhớ đơn lẻ hoặc một vùng nhớ được hệ điều hành cấp phát cho chương trình C++ nhằm để lưu trữ giá trị vào bên trong vùng nhớ đó
  khai báo 1 biến : 
 ```php
@@ -94,7 +96,7 @@ có thể nhập dạng số nguyên , kí tự tùy vào kiểu dữ liệu c�
 
 - Hằng: Giúp đảm bảo giá trị của một biến không bị thay đổi. Một hằng phải được khởi tạo giá trị ngay khi khai báo
 Khai báo hằng:
-```php
+```C++
     const <kiểu dữ liệu> <tên biến> = <giá trị>;
     <kiểu dữ liệu> const <tên biến> = <giá trị>;
     #define <tên hằng> <giá trị>
@@ -108,10 +110,15 @@ Chúng ta có thể khai báo cùng 1 lúc nhiều biến nếu chúng có cùng
 ![image](https://user-images.githubusercontent.com/85023342/139536247-c523ba4a-fcfa-4fac-80e0-17005ad423d9.png)
 
 
-####5. Các phép toán
+#### 5. Các phép toán <a name="5"></a>
 - Phép toán : +, -, *, / , %
 - Toán tử gán: `<bien> =  <giá trị>`
 - Toán tử so sánh: >, <, <=, >=, ==, != 
 - Toán tử tăng giảm : ++i, --i, i++, i--, 
-
-	i-=a` `  <-> i = i-a 
+    toán tử |lệnh | tương đương
+    | -- | -- | -- |
+    += | i += a | i = i + a
+    -= | i -= a | i = i - a
+    *= | i *= a | i = i * a
+    /= | i /= a | i = i / a
+    %= | i %= a | i = i % a
